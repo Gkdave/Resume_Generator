@@ -10,7 +10,74 @@
 <body>
 <div class="container" id="cv-form">
     <h1 class="text-center my-2" >Resume Generator</h1>
+    <p class="text-center"> By Learn JavaScript Code with Dave</p>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Personal Information</h3>
+            <div class="form-group">
+                <label for="name">YourName</label>
+                <input type="text" id="nameField" class="form-control" placeholder="Enter here">
+            </div>
+            <div class="form-group">
+                <label for="contact">Your Contact</label>
+                <input type="text" id="contactField" placeholder="Enter Here" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="address">Your Address</label>
+                <textarea class="form-control" id="addressField" placeholder="Enter here"></textarea>
+            </div>
+            <div class="form-group mt-3">
+                <label for="">Select Your Profile photo</label>
+                <input type="file" id="imageField" class="form-control">
+            </div>
+            <p class="text-secondary my-3">Important Links</p>
+            <div class="form-group">
+                    <label for="fbField">Facebook</label>
+                    <input type="text" id="fbField" class="form-control" placeholder="Enter Here">
+            </div>
+            <div class="form-group">
+                <label for="instaField">Instagram</label>
+                <input type="text" id="instaField" class="form-control" placeholder="Enter Here">
+            </div>
+            <div class="form-group">
+                <label for="linkedField">Linkedin</label>
+                <input type="text" id="linkedField" class="form-control" placeholder="Enter Here">
+            </div>
+           
+        </div>
+        
+        <div class="col-md-6">
+            <h3>Professional Information</h3>
+            <div class="form-group mt-2">
+                    <label for="">Objective</label>
+                    <textarea 
+                    id="objectiveField" 
+                    class="form-control" rows="5" placeholder="Enter Here"></textarea>
+                </div>
+                <div class="form-group mt-2" id='we'>
+                    <label for="">work Experience</label>
+                    <textarea class="form-control weField" placeholder="Enter Here" rows="3"></textarea>
+                
+                <div class="container text-center" id="weAddButton">
+                    <button onclick="addNewWEField()" class="btn btn-primary btn-sm my-2">Add</button>
+                </div>
+                </div>
+                <div class="form-group mt-2" id="aq">
+                    <label for="">Academic Qualification</label>
+                    <textarea class="form-control aqField" placeholder="Enter Here"
+                    rows="3"></textarea>
+                
 
+                <div class="container text-center" id="aqAddButton">
+                    <button onclick="addNewAQField()"   class="btn btn-primary btn-sm my-2">Add</button>
+                </div>
+                </div>
+            </div>
+        <div class="container mt-3 text-center">
+            <button onclick="generateCv()" class="btn btn-primary btn-lg"> Generate CV</button>
+        </div>
+    </div>
+ 
 </div> 
 
 
