@@ -1,12 +1,23 @@
-body {
+/* body {
     background-color: black;
     color: red;
-} 
+}  */
 
 /* cv-form {
     display: none;
 } */
 
-#cv-template{
-    
+/* #cv-template{
+    display: none;
+} */
+#line{
+    border: 1px solid white;
+}
+.myimg {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.background{
+    background-color: aqua;
 }

@@ -52,7 +52,7 @@
                     <label for="">Objective</label>
                     <textarea 
                     id="objectiveField" 
-                    class="form-control" rows="5" placeholder="Enter Here"></textarea>
+                    class="form-control" rows="3" placeholder="Enter Here"></textarea>
                 </div>
                 <div class="form-group mt-2" id='we'>
                     <label for="">work Experience</label>
@@ -77,8 +77,75 @@
             <button onclick="generateCv()" class="btn btn-primary btn-lg"> Generate CV</button>
         </div>
     </div>
- 
+    
 </div> 
+<hr id="line">
+
+<!-- cv template  -->
+
+<div class="container" id="cv-template">
+        <div class="row">
+            <div class="col-md-4 text-center py-5 background">
+                <!-- first column  -->
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRD7Q19DRsBsG9YP8VVeKCwzAUv8VqE_TqdNn9aFAihZyng5IKPPouN463Kt7CW8dnag0&usqp=CAU" alt="" class="img-fluid myimg"
+                 id="imgTemplate">
+                 <div class="container">
+                    <p id="nameT1">Aman kumar Tiwari</p>
+                    <p id="contactT">+91 6870340925,+91 8619667100</p>
+                    <p id="addressT"> sector 14, noida Delhi.</p>
+                    <hr>
+                    <p><a id="fbT" href="#">https://www.facebook.com/</a></p>
+                    <p><a id="instaT"  href="#">https://www.Instagram.com/</a></p>
+                    <p><a id="linkedT" href="#">https://www.linkdin.com/</a></p>
+                 </div>
+            </div>
+            <div class="col-md-8 py-5 ">
+                <!-- second column -->
+                 <h1 id="nameT2" class="text-center" style="font-weight: 900;">Aman kumar Tiwari</h1>
+                 <!-- objective card  -->
+                  <div class="card myt-4">
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis laborum similique enim quisquam accusantium repellat reiciendis dolorum, necessitatibus illum possimus quasi quaerat distinctio quia consequuntur quae architecto neque, expedita fugit iusto maiores dicta molestiae perspiciatis, nobis voluptate. Pariatur minima saepe unde ad expedita. Labore dolorum dolore at officia. Necessitatibus, quisquam!
+                        </p>
+                    </div>
+                  </div>
+                   <!-- work Experience -->
+               <div class="card myt-4">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                  </div>
+               <!-- Academic Qualification  -->
+                   <div class="card myt-4">
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="container mt-3 text-center">
+                    <button onclick="printCv()" class="btn background"> Print CV.</button>
+                  </div> 
+            </div>
+        </div>
+    </div>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
